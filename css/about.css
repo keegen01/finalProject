@@ -1,0 +1,26 @@
+body, body * {
+    margin:          unset;
+    box-sizing:      unset;
+    padding:         unset;
+    font-size:       unset;
+    color:           unset;
+    text-decoration: unset;
+        color:                 hsla(000, 100%, 100%, 0.88) !important;
+        background:            hsla(210, 100%,  50%, 0.33) !important;
+        outline: 0.25rem solid hsla(000, 100%, 100%, 0.50) !important;
+    }
+    p { color: green !important; }
+@media (max-width: 8.5in) { p { color: blue; } }
+@media (max-width: 5.0in) { p { color: red ; } }
+article {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 8.5in) 1fr;
+    height: 11in; /* temp fix */
+}
+article * { grid-column: 2 / 3; }
+debug-center {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+   
